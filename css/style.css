@@ -1,0 +1,119 @@
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'); */
+
+body{
+    font-family: 'BioRhyme', serif;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/to_do_1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.content{
+    margin-top: 38vh;
+    min-width: 290px;
+    max-width: 450px;
+    /* background-color: rgba(255, 166, 0, 0.486); */
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: orange;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .nav-link:hover{
+    background-color: rgba(255, 166, 0, 0.486);
+}
+
+.wrapper{
+    max-height: 55vh;
+    /* min-height: 50px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.lists{
+    flex: 1;
+    overflow: auto;
+}
+
+input, textarea, li{
+    background-color: rgba(255,255,255,0.1) !important;
+    /* color: #FFF; */
+}
+
+.form-control{
+    border: 3px solid orange;
+}
+
+.form-control:focus{
+    border-color: rgba(255, 175, 100, 0.678); 
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.075) inset, 0px 0px 8px rgba(255, 175, 100, 0.678);
+}
+
+.todos li, .completedTodos li{
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+    border: 1px solid grey !important;
+    box-shadow: 2px 2px grey !important;
+}
+
+.delete, .add{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.descForm input, .descForm input:focus{
+    border-color: rgb(250, 250, 249) !important;
+    max-width: 60%;
+}
+
+.descForm input::placeholder{
+    color:black;
+}
+
+.trash{
+    color: orange;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.btn-lg{
+    flex: 1;
+    font-size: 2.3rem;
+    /* border: 2px solid rgba(243, 192, 96, 0.959); */
+}
+
+svg:hover{
+    color: orange;
+}
+
+.success{
+    box-shadow: 1px 1px 1px 1px #02a525 inset, 1px 1px 1px 1px #15f415,
+    1px 1px 1px 1px #15f415 inset, 1px 1px 1px 1px #15f415;
+}
+
+.error{
+    box-shadow: 1px 1px 1px 1px #a54302 inset, 1px 1px 1px 1px #f45415,
+    1px 1px 1px 1px #f45415 inset, 1px 1px 1px 1px #f45415;
+}
+
+.delAll{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.penBadge, .comBadge{
+    font-size: 15px;
+}
